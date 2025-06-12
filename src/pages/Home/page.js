@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 const images = [
   '/images/carousel1.jpg',
@@ -178,28 +179,90 @@ function HomePageCarousel() {
       Apart from our huge retail division, we are privileged to be the official OEM (Original Equipment Manufacturer) for the companies listed below.
     </p>
 
-    <div className="flex flex-wrap justify-center items-center gap-10 px-4">
-      <img
-        src="/images/paksuzuki.png"
-        alt="Pak Suzuki"
-        className="h-24 object-contain  transition duration-300"
-      />
-      <img
-        src="/images/mastermotor.jpg"
-        alt="Master Motor"
-        className="h-24 object-contain  transition duration-300"
-      />
-      <img
-        src="/images/karakoram.jpg"
-        alt="Karakoram"
-        className="h-24 object-contain  transition duration-300"
-      />
-      <img
-        src="/images/thaleng.png"
-        alt="Thal Engineering"
-        className="h-12 object-contain  transition duration-300"
-      />
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 px-4 place-items-center">
+      {/* First Row */}
+      <Link href="https://suzukipakistan.com/" legacyBehavior>
+        <a className="transform transition-transform duration-300 hover:scale-110">
+          <img
+            src="/images/paksuzuki.png"
+            alt="Pak Suzuki"
+            className="h-24 object-contain"
+          />
+        </a>
+      </Link>
+
+      <Link href="https://mmcl.com.pk/" legacyBehavior>
+        <a className="transform transition-transform duration-300 hover:scale-110">
+          <img
+            src="/images/mastermotor.jpg"
+            alt="Master Motor"
+            className="h-24 object-contain"
+          />
+        </a>
+      </Link>
+
+      <Link href="https://www.karakorammotors.com/" legacyBehavior>
+        <a className="transform transition-transform duration-300 hover:scale-110">
+          <img
+            src="/images/karakoram.jpg"
+            alt="Karakoram"
+            className="h-24 object-contain"
+          />
+        </a>
+      </Link>
+
+      <Link href="https://thalengg.com/" legacyBehavior>
+        <a className="transform transition-transform duration-300 hover:scale-110">
+          <img
+            src="/images/thaleng.png"
+            alt="Thal Engineering"
+            className="h-12 object-contain"
+          />
+        </a>
+      </Link>
+
+      {/* Second Row */}
+      <Link href="https://suzukipakistan.com/" legacyBehavior>
+        <a className="transform transition-transform duration-300 hover:scale-110">
+          <img
+            src="/images/paksuzuki.png"
+            alt="Client 1"
+            className="h-24 object-contain"
+          />
+        </a>
+      </Link>
+
+      <Link href="https://mmcl.com.pk/" legacyBehavior>
+        <a className="transform transition-transform duration-300 hover:scale-110">
+          <img
+            src="/images/mastermotor.jpg"
+            alt="Client 2"
+            className="h-24 object-contain"
+          />
+        </a>
+      </Link>
+
+      <Link href="https://www.karakorammotors.com/" legacyBehavior>
+        <a className="transform transition-transform duration-300 hover:scale-110">
+          <img
+            src="/images/karakoram.jpg"
+            alt="Client 3"
+            className="h-24 object-contain"
+          />
+        </a>
+      </Link>
+
+      <Link href="https://thalengg.com/" legacyBehavior>
+        <a className="transform transition-transform duration-300 hover:scale-110">
+          <img
+            src="/images/thaleng.png"
+            alt="Client 4"
+            className="h-12 object-contain"
+          />
+        </a>
+      </Link>
     </div>
+
   </div>
 </div>
 

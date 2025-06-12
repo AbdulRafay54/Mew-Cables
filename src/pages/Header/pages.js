@@ -43,7 +43,7 @@ const navItems = [
     sizeClass: "text-sm",
   },
   {
-    href: "/contact",
+    href: "./Contact/page",
     label: "Contact us",
     icon: <MapPin size={20} />,
     sizeClass: "text-base",

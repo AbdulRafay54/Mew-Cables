@@ -5,12 +5,13 @@ import AboutPage from './About/page';
 
 
 
+
 const index = () => {
   return (
 <>
     
     <HomePageCarousel/>
-    
+   
      
     
 </>
