@@ -1,8 +1,13 @@
-import React from "react";
-import { FaFacebookF, FaWhatsapp } from 'react-icons/fa';
-
+import React, { useEffect, useState } from "react";
+import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+  const [year, setYear] = useState('');
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-gradient-to-br from-[#0b1a36] to-[#12284a] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -36,7 +41,6 @@ const Footer = () => {
               className="bg-white text-sky-600 p-2 rounded-full hover:bg-sky-300 transition"
             >
               <FaFacebookF size={18} />
-              
             </a>
             <a
               href="#"
@@ -50,7 +54,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="bg-gradient-to-r from-sky-600 to-blue-800 text-center py-4 text-sm font-medium text-white">
-        © {new Date().getFullYear()} MEW Cables. All Rights Reserved.
+        © {year} MEW Cables. All Rights Reserved.
         <br className="sm:hidden" />
         <span className="block sm:inline">
           {" "}

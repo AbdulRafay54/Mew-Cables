@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className="bg-white text-gray-800 py-12 px-6 sm:px-12">
       <div className="max-w-5xl mx-auto">
         {/* Main Heading */}
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-center text-blue-800 mb-10 border-b-4 border-blue-500 inline-block pb-2">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-center text-blue-800 mb-10  border-blue-500 inline-block pb-2">
           About MEW Cables
         </h1>
 
@@ -55,7 +55,7 @@ export default function AboutPage() {
         <div className="flex flex-col sm:flex-row-reverse items-center gap-8 mb-16">
           <div className="w-full sm:w-1/2">
             <Image
-              src="/images/vission.jpg"
+              src="/images/bikeabout.png"
               alt="Our Vision"
               width={600}
               height={400}

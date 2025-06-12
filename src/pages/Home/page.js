@@ -182,22 +182,22 @@ function HomePageCarousel() {
       <img
         src="/images/paksuzuki.png"
         alt="Pak Suzuki"
-        className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300"
+        className="h-24 object-contain  transition duration-300"
       />
       <img
         src="/images/mastermotor.jpg"
         alt="Master Motor"
-        className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300"
+        className="h-24 object-contain  transition duration-300"
       />
       <img
         src="/images/karakoram.jpg"
         alt="Karakoram"
-        className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300"
+        className="h-24 object-contain  transition duration-300"
       />
       <img
         src="/images/thaleng.png"
         alt="Thal Engineering"
-        className="h-12 object-contain grayscale hover:grayscale-0 transition duration-300"
+        className="h-12 object-contain  transition duration-300"
       />
     </div>
   </div>

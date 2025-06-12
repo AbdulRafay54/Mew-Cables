@@ -32,12 +32,12 @@ const navItems = [
     icon: <Package size={18} />,
     sizeClass: "text-sm",
     subItems: [
-      { href: "/products/automobile", label: "Automobile" },
-      { href: "/products/motorcycle", label: "Motorcycle" },
+      { href: "./Products/automobile", label: "Automobile" },
+      { href: "/Products/automake", label: "Motorcycle" },
     ],
   },
   {
-    href: "/rnd",
+    href: "./Research/page",
     label: "R&D",
     icon: <MessageSquare size={18} />,
     sizeClass: "text-sm",
