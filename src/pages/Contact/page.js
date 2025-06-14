@@ -1,10 +1,10 @@
 "use client";
 
-export default function ContactUs() {
+ function ContactUs() {
   return (
     <div className="min-h-screen bg-white px-4 sm:px-8 py-12">
       <div className="max-w-3xl mx-auto">
-        {/* Website Heading */}
+        
         <h1 className="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-8">
           Contact MEW Cables
         </h1>
@@ -16,11 +16,13 @@ export default function ContactUs() {
           </h2>
 
           <form>
+            
             <div className="mb-4">
               <label className="block text-blue-900 font-medium mb-1" htmlFor="name">
-                Your Name
+                Your Name <span className="text-red-500">*</span>
               </label>
               <input
+                required
                 className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"
                 placeholder="Enter your name"
                 type="text"
@@ -29,11 +31,13 @@ export default function ContactUs() {
               />
             </div>
 
+          
             <div className="mb-4">
               <label className="block text-blue-900 font-medium mb-1" htmlFor="email">
-                Your Email
+                Your Email <span className="text-red-500">*</span>
               </label>
               <input
+                required
                 className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"
                 placeholder="Enter your email"
                 type="email"
@@ -42,11 +46,41 @@ export default function ContactUs() {
               />
             </div>
 
+            
+            <div className="mb-4">
+              <label className="block text-blue-900 font-medium mb-1" htmlFor="company">
+                Company Name <span className="text-gray-500 text-sm">(optional)</span>
+              </label>
+              <input
+                className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"
+                placeholder="Enter your company name"
+                type="text"
+                id="company"
+                name="company"
+              />
+            </div>
+
+            
+            <div className="mb-4">
+              <label className="block text-blue-900 font-medium mb-1" htmlFor="country">
+                Country <span className="text-gray-500 text-sm">(optional)</span>
+              </label>
+              <input
+                className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"
+                placeholder="Enter your country"
+                type="text"
+                id="country"
+                name="country"
+              />
+            </div>
+
+            
             <div className="mb-4">
               <label className="block text-blue-900 font-medium mb-1" htmlFor="message">
-                Your Message
+                Your Message <span className="text-red-500">*</span>
               </label>
               <textarea
+                required
                 className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"
                 rows="5"
                 placeholder="Enter your message"
@@ -55,6 +89,7 @@ export default function ContactUs() {
               ></textarea>
             </div>
 
+            
             <button
               type="submit"
               className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 font-semibold"
@@ -67,3 +102,4 @@ export default function ContactUs() {
     </div>
   );
 }
+export default ContactUs;

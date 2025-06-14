@@ -2,11 +2,11 @@
 
 import Image from 'next/image';
 
-export default function ResearchDevelopment() {
+ function ResearchDevelopment() {
   return (
     <section className="bg-white text-gray-800 py-16 px-6 sm:px-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
+       
         <div>
           <h2 className="text-4xl font-bold text-blue-700 mb-6">
             Research & Development
@@ -38,3 +38,4 @@ export default function ResearchDevelopment() {
     </section>
   );
 }
+export default ResearchDevelopment;

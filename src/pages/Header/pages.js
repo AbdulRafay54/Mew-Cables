@@ -68,7 +68,6 @@ function Header() {
   return (
     <header className=" w-full bg-white shadow-sm border-b">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 flex justify-between items-center h-20 relative">
-        {/* Logo */}
         <div className="flex items-center">
           <img
             src="/images/logo.png"
@@ -77,7 +76,6 @@ function Header() {
           />
         </div>
 
-        {/* Mobile Hamburger */}
         <div className="sm:hidden z-20">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -88,7 +86,6 @@ function Header() {
           </button>
         </div>
 
-        {/* Nav Items */}
         <nav
           className={`absolute sm:static top-20 left-0 w-full sm:w-auto bg-white sm:bg-transparent shadow sm:shadow-none transition-all duration-300 z-10 sm:pr-4 ${
             menuOpen ? "block" : "hidden"
@@ -136,7 +133,6 @@ function Header() {
                     </div>
                   </Link>
 
-                  {/* Underline on hover or active */}
                   <span
                     className={`hidden sm:block absolute -bottom-1 left-0 w-full h-0.5 bg-blue-500 rounded transition-transform duration-300 origin-left scale-x-0 group-hover:scale-x-100 ${
                       active === item.href ||
@@ -147,7 +143,6 @@ function Header() {
                     }`}
                   ></span>
 
-                  {/* Dropdown */}
                   {hasDropdown && (
                     <ul
                       className={`sm:absolute sm:top-full sm:left-0 sm:bg-white sm:shadow-lg sm:rounded-md sm:border sm:border-gray-200 sm:min-w-[180px] sm:py-2 sm:mt-1 ${
