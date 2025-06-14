@@ -27,7 +27,7 @@ const navItems = [
     sizeClass: "text-base",
   },
   {
-    href: "/products",
+    href: "./Products/automobile",
     label: "Products & OEMs",
     icon: <Package size={18} />,
     sizeClass: "text-sm",

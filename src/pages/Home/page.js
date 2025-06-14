@@ -47,11 +47,11 @@ function HomePageCarousel() {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-14">
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 max-w-sm mx-auto">
             <div className="p-2 bg-gradient-to-br from-sky-300 to-blue-200 rounded-3xl shadow-2xl">
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="/images/aboutimg.jpg"
+                  src="/images/aboutimg.png"
                   alt="About MEW Cables"
                   className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -59,7 +59,7 @@ function HomePageCarousel() {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <div className="w-full lg:w-1/2 ml-4 text-center lg:text-left">
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed tracking-wide mb-10">
               <span className="font-semibold text-sky-800">MEW Cables</span> is
               one of the leading manufacturers of Car Cables and Assembly
@@ -76,9 +76,11 @@ function HomePageCarousel() {
                 <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
               </span>
               <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-sky-600 rounded-md group-hover:translate-x-0"></span>
-              <span className="relative w-full text-center text-white transition-colors duration-200 ease-in-out group-hover:text-white">
-                Read More
-              </span>
+              <Link href="./About/page">
+                <span className="relative w-full text-center text-white transition-colors duration-200 ease-in-out group-hover:text-white">
+                  Read More
+                </span>
+              </Link>
             </button>
           </div>
         </div>
@@ -165,7 +167,7 @@ function HomePageCarousel() {
             <Link href="https://mmcl.com.pk/" legacyBehavior>
               <a className="transform transition-transform duration-300 hover:scale-110">
                 <img
-                  src="/images/mastermotor.jpg"
+                  src="/images/mastermotor.png"
                   alt="Master Motor"
                   className="h-24 object-contain"
                 />
@@ -175,7 +177,7 @@ function HomePageCarousel() {
             <Link href="https://www.karakorammotors.com/" legacyBehavior>
               <a className="transform transition-transform duration-300 hover:scale-110">
                 <img
-                  src="/images/karakoram.jpg"
+                  src="/images/karakoram.png"
                   alt="Karakoram"
                   className="h-24 object-contain"
                 />
@@ -206,7 +208,7 @@ function HomePageCarousel() {
             <Link href="https://mmcl.com.pk/" legacyBehavior>
               <a className="transform transition-transform duration-300 hover:scale-110">
                 <img
-                  src="/images/mastermotor.jpg"
+                  src="/images/mastermotor.png"
                   alt="Client 2"
                   className="h-24 object-contain"
                 />
@@ -216,7 +218,7 @@ function HomePageCarousel() {
             <Link href="https://www.karakorammotors.com/" legacyBehavior>
               <a className="transform transition-transform duration-300 hover:scale-110">
                 <img
-                  src="/images/karakoram.jpg"
+                  src="/images/karakoram.png"
                   alt="Client 3"
                   className="h-24 object-contain"
                 />
