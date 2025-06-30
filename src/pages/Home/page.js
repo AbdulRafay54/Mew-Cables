@@ -93,7 +93,7 @@ function HomePageCarousel() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {[
             {
               src: "/images/car.webp",
@@ -119,7 +119,7 @@ function HomePageCarousel() {
               className="bg-white bg-opacity-90 backdrop-blur-md shadow-xl hover:shadow-[0_0_25px_#4fc3f7] border border-blue-200 rounded-3xl overflow-hidden transition-all duration-500 hover:scale-105"
             >
               {/* Image Section */}
-              <div className="overflow-hidden bg-gradient-to-tr from-black via-blue-900 to-blue-600">
+              {/* <div className="overflow-hidden bg-gradient-to-tr from-black via-blue-900 to-blue-600">
                 <img
                   src={src}
                   alt={title}
@@ -128,16 +128,16 @@ function HomePageCarousel() {
               </div>
 
               {/* Text Section */}
-              <div className="p-6 text-center bg-gradient-to-br from-black via-blue-800 to-blue-600">
+              {/* <div className="p-6 text-center bg-gradient-to-br from-black via-blue-800 to-blue-600">
                 <h3 className="text-xl font-semibold text-slate-100 mb-2 flex justify-center items-center gap-2 tracking-wide">
                   <span className="text-2xl">{icon}</span> {title}
                 </h3>
                 <p className="text-sm text-slate-200 leading-relaxed">{desc}</p>
               </div>
-            </div>
-          ))}
-        </div>
-        {/* <div className="bg-white bg-opacity-90 backdrop-blur-md shadow-xl border border-blue-200 rounded-3xl overflow-hidden">
+            </div> */}
+          {/* ))} */} 
+        {/* </div> */} 
+        <div className="bg-white bg-opacity-90 backdrop-blur-md shadow-xl border border-blue-200 rounded-3xl overflow-hidden">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
     {[
       {
@@ -164,7 +164,7 @@ function HomePageCarousel() {
         className="flex flex-col h-full border-b md:border-b-0 md:border-r border-blue-200 last:border-r-0 last:border-b-0"
       >
         {/* Image Section */}
-        {/* <div className="overflow-hidden bg-gradient-to-tr from-black via-blue-900 to-blue-600">
+        <div className="overflow-hidden bg-gradient-to-tr from-black via-blue-900 to-blue-600">
           <img
             src={src}
             alt={title}
@@ -173,7 +173,7 @@ function HomePageCarousel() {
         </div>
 
         {/* Text Section */}
-        {/* <div className="p-6 text-center bg-gradient-to-br from-black via-blue-800 to-blue-600 flex-1 flex flex-col justify-center">
+         <div className="p-6 text-center bg-gradient-to-br from-black via-blue-800 to-blue-600 flex-1 flex flex-col justify-center">
           <h3 className="text-xl font-semibold text-slate-100 mb-2 flex justify-center items-center gap-2 tracking-wide">
             <span className="text-2xl">{icon}</span> {title}
           </h3>
@@ -181,8 +181,8 @@ function HomePageCarousel() {
         </div>
       </div>
     ))}
-//   </div> */}
-{/* // </div> */}
+  </div> 
+  </div>
 
 
         {/* OUR MANUFACTURERS Section */}

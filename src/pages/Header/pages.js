@@ -11,48 +11,47 @@ import {
   Menu,
   X,
   ChevronDown,
+  User,
+  Wrench,
+  FlaskConical,
+  Phone,
+  Briefcase,
 } from "lucide-react";
 
 const navItems = [
   {
-    href: "/",
+    href: "/", // Home
     label: "Home",
-    icon: <Home size={20} />,
-    sizeClass: "text-base",
+    icon: <Home size={18} />,
   },
   {
-    href: "./About/page",
+    href: "/About/page",
     label: "About us",
-    icon: <Info size={20} />,
-    sizeClass: "text-base",
+    icon: <User size={18} />,
   },
   {
-    href: "./Products/automobile",
+    href: "/Products/automobile",
     label: "Products & OEMs",
-    icon: <Package size={18} />,
-    sizeClass: "text-sm",
+    icon: <Wrench size={18} />,
     subItems: [
-      { href: "./Products/automobile", label: "Automobile" },
+      { href: "/Products/automobile", label: "Automobile" },
       { href: "/Products/automake", label: "Motorcycle" },
     ],
   },
   {
-    href: "./Research/page",
+    href: "/Research/page",
     label: "R&D",
-    icon: <MessageSquare size={18} />,
-    sizeClass: "text-sm",
+    icon: <FlaskConical size={18} />,
   },
   {
-    href: "./Contact/page",
+    href: "/Contact/page",
     label: "Contact us",
-    icon: <MapPin size={20} />,
-    sizeClass: "text-base",
+    icon: <Phone size={18} />,
   },
   {
     href: "/careers",
     label: "Careers",
-    icon: <MapPin size={18} />,
-    sizeClass: "text-sm",
+    icon: <Briefcase size={18} />,
   },
 ];
 
@@ -69,11 +68,13 @@ function Header() {
     <header className=" w-full bg-white shadow-sm border-b">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 flex justify-between items-center h-20 relative">
         <div className="flex items-center">
-          <img
-            src="/images/logo.png"
-            alt="Logo"
-            className="h-16 sm:h-20 object-contain"
-          />
+          <Link href="/" passHref>
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              className="h-16 sm:h-20 object-contain cursor-pointer"
+            />
+          </Link>
         </div>
 
         <div className="sm:hidden z-20">
