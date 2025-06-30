@@ -49,7 +49,7 @@ const navItems = [
     icon: <Phone size={18} />,
   },
   {
-    href: "/careers",
+    href: "/",
     label: "Careers",
     icon: <Briefcase size={18} />,
   },
@@ -67,15 +67,22 @@ function Header() {
   return (
     <header className=" w-full bg-white shadow-sm border-b">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 flex justify-between items-center h-20 relative">
-        <div className="flex items-center">
-          <Link href="/" passHref>
-            <img
-              src="/images/logo.png"
-              alt="Logo"
-              className="h-16 sm:h-20 object-contain cursor-pointer"
-            />
-          </Link>
-        </div>
+       <div className="flex flex-col items-center justify-center text-center cursor-pointer">
+  <Link href="/" passHref>
+    <div className="flex flex-col items-center">
+      <img
+        src="/images/logo.png"
+        alt="Logo"
+        className="h-10 sm:h-12 object-contain"
+      />
+      <span className="text-lg sm:text-xl mt-1 tracking-wide leading-tight">
+        <span className="font-extrabold text-blue-800">MEW</span>{" "}
+        <span className="font-extrabold text-blue-500">Cables</span>
+      </span>
+    </div>
+  </Link>
+</div>
+
 
         <div className="sm:hidden z-20">
           <button
