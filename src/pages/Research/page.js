@@ -28,7 +28,7 @@ import Image from 'next/image';
         
         <div className="relative w-full h-96">
           <Image
-            src="/images/aboutimg.jpg" 
+            src="/images/R&D.png" 
             alt="Research and Development"
             fill
             className="object-cover rounded-2xl shadow-lg"
