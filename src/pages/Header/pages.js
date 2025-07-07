@@ -49,7 +49,7 @@ const navItems = [
     icon: <Phone size={18} />,
   },
   {
-    href: "/",
+    href: "/Careers/page",
     label: "Careers",
     icon: <Briefcase size={18} />,
   },

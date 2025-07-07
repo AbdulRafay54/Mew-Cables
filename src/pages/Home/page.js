@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const images = [
   "/images/carousel1.jpg",
@@ -137,52 +138,67 @@ function HomePageCarousel() {
             </div> */}
           {/* ))} */} 
         {/* </div> */} 
-        <div className="bg-white bg-opacity-90 backdrop-blur-md shadow-xl border border-blue-200 rounded-3xl overflow-hidden">
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-    {[
-      {
-        src: "/images/car.webp",
-        title: "Automobile",
-        icon: "🚗",
-        desc: "Reliable solutions for all types of vehicles.",
-      },
-      {
-        src: "/images/bike.webp",
-        title: "Motorcycle",
-        icon: "🏍️",
-        desc: "Wiring and assemblies made for two-wheelers.",
-      },
-      {
-        src: "/images/window.webp",
-        title: "Window Regulator",
-        icon: "🛠️",
-        desc: "Precision-built regulators for auto windows.",
-      },
-    ].map(({ src, title, icon, desc }, i) => (
-      <div
-        key={i}
-        className="flex flex-col h-full border-b md:border-b-0 md:border-r border-blue-200 last:border-r-0 last:border-b-0"
-      >
-        {/* Image Section */}
-        <div className="overflow-hidden bg-gradient-to-tr from-black via-blue-900 to-blue-600">
-          <img
-            src={src}
-            alt={title}
-            className="w-full h-[200px] object-contain transition-transform duration-500 hover:scale-110"
-          />
-        </div>
+       
+  
+  <div className="bg-[#00224D] py-12 px-4 text-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
 
-        {/* Text Section */}
-         <div className="p-6 text-center bg-gradient-to-br from-black via-blue-800 to-blue-600 flex-1 flex flex-col justify-center">
-          <h3 className="text-xl font-semibold text-slate-100 mb-2 flex justify-center items-center gap-2 tracking-wide">
-            <span className="text-2xl">{icon}</span> {title}
-          </h3>
-          <p className="text-sm text-slate-200 leading-relaxed">{desc}</p>
+          {/* Automobile */}
+          <div className="flex flex-col items-center text-center group">
+            <div className="relative w-full max-w-[420px] h-[360px] overflow-hidden rounded-xl">
+              <Image
+                src="/images/car.png"
+                alt="Automobile"
+                layout="fill"
+                objectFit="contain"
+                className="transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="mt-3 flex items-center gap-2">
+              <span className="text-xl">🚗</span>
+              <span className="text-base font-medium">Automobile</span>
+            </div>
+          </div>
+
+          {/* Motorcycle */}
+          <div className="flex flex-col items-center text-center group">
+            <div className="relative w-full max-w-[420px] h-[360px] overflow-hidden rounded-xl">
+              <Image
+                src="/images/bike.png"
+                alt="Motorcycle"
+                layout="fill"
+                objectFit="contain"
+                className="transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="mt-3 flex items-center gap-2">
+              <span className="text-xl">🏍️</span>
+              <span className="text-base font-medium">Motorcycle</span>
+            </div>
+          </div>
+
+          {/* Window Regulator */}
+          <div className="flex flex-col items-center text-center group">
+            <div className="relative w-full max-w-[420px] h-[360px] overflow-hidden rounded-xl">
+              <Image
+                src="/images/window.webp"
+                alt="Window Regulator"
+                layout="fill"
+                objectFit="contain"
+                className="transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="mt-3 flex items-center gap-2">
+              <span className="text-xl">🛠️</span>
+              <span className="text-base font-medium">Window Regulator</span>
+            </div>
+          </div>
+
         </div>
       </div>
-    ))}
-  </div> 
-  </div>
+    </div>
+
 
 
         {/* OUR MANUFACTURERS Section */}

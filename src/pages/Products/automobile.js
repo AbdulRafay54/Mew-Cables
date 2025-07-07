@@ -7,7 +7,7 @@ const products = [
   {
     name: 'Transmission Cable MT',
     description: 'Manual gear shifting cable for smooth performance.',
-    image: '/images/aboutimg.jpg',
+    image: '/images/transmission.png',
   },
   {
     name: 'Trunk Opener Cable',
