@@ -37,7 +37,7 @@ const Careers = () => {
             <h3 className="text-xl font-semibold text-blue-900 mb-3">Apply Online</h3>
             <p className="text-gray-700 text-sm sm:text-base mb-5">
               Click below to fill out the application form and upload your resume. Make sure to
-              mention your previous experience and why you'd like to join MEW Cables.
+              mention your previous experience and why you did like to join MEW Cables.
             </p>
 
             <a
