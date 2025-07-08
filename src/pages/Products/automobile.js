@@ -12,42 +12,42 @@ const products = [
   {
     name: 'Trunk Opener Cable',
     description: 'Durable trunk release system cable.',
-    image: '/images/carousel2.png',
+    image: '/images/trunkopener.png',
   },
   {
     name: 'Shift Cable',
     description: 'Flexible cable for gear control mechanisms.',
-    image: '/images/carousel2.png',
+    image: '/images/shiftcable.png',
   },
   {
     name: 'Accelerator Cable',
     description: 'High-tension cable for throttle control.',
-    image: '/images/carousel2.png',
+    image: '/images/accelatorcable.png',
   },
   {
     name: 'Clutch Cable',
     description: 'Designed for smooth clutch operation.',
-    image: '/images/carousel2.png',
+    image: '/images/clutchcable.png',
   },
   {
     name: 'Bonnet Cable',
     description: 'Enables easy bonnet opening system.',
-    image: '/images/carousel2.png',
+    image: '/images/bonnet.png',
   },
   {
     name: 'Fuel Lid Cable',
     description: 'Secure and reliable fuel lid opener cable.',
-    image: '/images/carousel2.png',
+    image: '/images/fuellid.png',
   },
   {
     name: 'Brake Cable',
     description: 'Ensures precise brake control.',
-    image: '/images/carousel2.png',
+    image: '/images/brakecable.png',
   },
   {
     name: 'Hood Opener Cable',
     description: 'Effortless access to engine bay.',
-    image: '/images/carousel2.png',
+    image: '/images/hood.png',
   },
 ];
 
@@ -60,48 +60,43 @@ export default function AutomobileGrid() {
         Automobile
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-       {products.map((product, index) => (
-  <div
-    key={index}
-    onClick={() => setSelectedProduct(product)}
-    className="group relative cursor-pointer bg-white border border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 overflow-hidden"
-  >
-    {/* Image */}
-    <div className="overflow-hidden rounded-t-2xl">
-      <Image
-        src={product.image}
-        alt={product.name}
-        width={400}
-        height={250}
-        className="object-cover w-full h-48 group-hover:scale-110 transition-transform duration-500"
-      />
-    </div>
-
-    {/* Text Content */}
-    <div className="p-5 bg-white space-y-2">
-      <h3 className="text-blue-800 font-semibold text-lg tracking-wide">
-        {product.name}
-      </h3>
-      <p className="text-gray-600 text-sm leading-relaxed tracking-wide">
-        {product.description}
-      </p>
-    </div>
-
-    {/* Hover Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-r from-blue-700 via-white to-blue-400 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl backdrop-blur-sm">
-      <span className="text-blue-900 text-lg font-bold px-6 py-2 bg-white/90 rounded-xl shadow-md drop-shadow tracking-wide">
-        {product.name}
-      </span>
-    </div>
-  </div>
-))}
-
-
-
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+  {products.map((product, index) => (
+    <div
+      key={index}
+      onClick={() => setSelectedProduct(product)}
+      className="group relative cursor-pointer bg-white border border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 overflow-hidden"
+    >
+      <div className="overflow-hidden rounded-t-2xl">
+        <Image
+          src={product.image}
+          alt={product.name}
+          width={400}
+          height={350} 
+          className="object-cover w-full h-72 group-hover:scale-110 transition-transform duration-500" // h-72 now
+        />
       </div>
 
-      {/* MODAL */}
+      {/* Text Content */}
+      <div className="p-5 bg-white space-y-2">
+        <h3 className="text-blue-800 font-semibold text-lg tracking-wide">
+          {product.name}
+        </h3>
+        <p className="text-gray-600 text-sm leading-relaxed tracking-wide">
+          {product.description}
+        </p>
+      </div>
+
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-700 via-white to-blue-400 bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl backdrop-blur-sm">
+        <span className="text-blue-900 text-lg font-bold px-6 py-2 bg-white/90 rounded-xl shadow-md drop-shadow tracking-wide">
+          {product.name}
+        </span>
+      </div>
+    </div>
+  ))}
+</div>
+
+
       {selectedProduct && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center px-4 overflow-y-auto py-10">
           <div className="bg-white max-w-5xl w-full rounded-xl shadow-lg overflow-hidden relative flex flex-col md:flex-row">
